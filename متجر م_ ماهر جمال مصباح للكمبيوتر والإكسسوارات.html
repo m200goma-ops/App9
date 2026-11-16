@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>م/ ماهر جمال مصباح | للكمبيوتر والشاشات والإكسسوارات</title>
+    <!-- تحميل Tailwind CSS للتصميم المتجاوب والسريع -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- تحميل خط Cairo و Tajawal للغة العربية -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- مكتبة أيقونات Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f1f5f9;
+            color: #0f172a;
+            -webkit-tap-highlight-color: transparent;
+        }
+        /* إخفاء شريط التمرير الأفقي لأزرار الأقسام مع إبقاء التمرير سلساً */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* تأثير نبض خفيف لشارة السعر المفاجأة */
+        @keyframes subtle-glow {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.35); }
+            50% { box-shadow: 0 0 0 6px rgba(245, 158, 11, 0); }
+        }
+        .surprise-badge {
+            animation: subtle-glow 2.5s infinite;
+        }
+        .ltr-num {
+            direction: ltr;
+            unicode-bidi: embed;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- الهيدر الرئيسي (Header & Store Identity) -->
+    <header class="bg-gradient-to-bl from-slate-950 via-slate-900 to-sky-950 text-white shadow-xl border-b border-sky-800/40">
+        <div class="max-w-6xl mx-auto px-4 py-6 sm:py-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <!-- الهوية واسم المحل والعنوان -->
+                <div class="flex flex-col sm:flex-row items-center text-center sm:text-right gap-4">
+                    <!-- شعار تقني أنيق للمحل -->
+                    <div class="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-tr from-sky-600 to-blue-500 p-1 shadow-lg shadow-sky-500/25 shrink-0">
+                        <div class="w-full h-full bg-slate-900 rounded-xl flex flex-col items-center justify-center border border-sky-400/30">
+                            <span class="text-2xl sm:text-3xl font-black text-sky-400 tracking-tight leading-none">م/م</span>
+                            <span class="text-[10px] text-slate-300 font-semibold mt-1">كمبيوتر وشاشات</span>
+                        </div>
+                        <span class="absolute -bottom-1 -left-1 w-5 h-5 bg-emerald-500 border-2 border-slate-900 rounded-full" title="متاح الآن"></span>
+                    </div>
+
+                    <div>
+                        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/15 border border-sky-400/30 text-sky-300 text-xs font-bold mb-2">
+                            <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+                            <span>أقوى تشكيلة لابتوبات وشاشات وإكسسوارات</span>
+                        </div>
+                        <h1 class="text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-tight">
+                            م/ ماهر جمال مصباح
+                        </h1>
+                        <p class="mt-2 text-slate-300 text-sm sm:text-base flex items-center justify-center sm:justify-start gap-1.5 font-medium">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-amber-400 shrink-0"></i>
+                            <span>زاوية غزال خلف الكوبرى القديم</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- أرقام التواصل المباشر (01001735475 يمين و 01097662434 يسار) -->
+                <div class="w-full md:w-auto bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-4 shadow-inner">
+                    <p class="text-xs text-slate-300 font-bold text-center md:text-right mb-3 flex items-center justify-center md:justify-start gap-1.5">
+                        <i data-lucide="headset" class="w-4 h-4 text-emerald-400"></i>
+                        <span>تواصل معنا مباشرة (اتصال أو واتساب):</span>
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <!-- الرقم الأساسي (على اليمين) -->
+                        <div class="bg-slate-900/80 border border-sky-500/30 rounded-xl p-2.5 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="text-[11px] bg-sky-500/20 text-sky-300 px-2 py-0.5 rounded-md font-bold">الرقم الأساسي</span>
+                                <span class="ltr-num font-black text-base text-white tracking-wide">01001735475</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-1.5">
+                                <a href="https://wa.me/201001735475?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%A8%D8%B4%D9%85%D9%87%D9%86%D8%AF%D8%B3%20%D9%85%D8%A7%D9%87%D8%B1%D8%8C%20%D8%A8%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D8%A8%D8%B6%D8%A7%D8%B9%D8%A9%20%D8%A7%D9%84%D9%85%D8%AA%D9%88%D9%81%D8%B1%D8%A9" target="_blank" rel="noopener"
+                                   class="flex items-center justify-center gap-1 bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white text-xs font-bold py-2 px-2 rounded-lg transition">
+                                    <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                                    <span>واتساب</span>
+                                </a>
+                                <a href="tel:01001735475"
+                                   class="flex items-center justify-center gap-1 bg-sky-600 hover:bg-sky-500 active:scale-95 text-white text-xs font-bold py-2 px-2 rounded-lg transition">
+                                    <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+                                    <span>اتصال</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- الرقم الإضافي (على اليسار) -->
+                        <div class="bg-slate-900/80 border border-slate-700 rounded-xl p-2.5 flex flex-col gap-2">
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="text-[11px] bg-slate-700 text-slate-300 px-2 py-0.5 rounded-md font-bold">رقم إضافي</span>
+                                <span class="ltr-num font-black text-base text-white tracking-wide">01097662434</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-1.5">
+                                <a href="https://wa.me/201097662434?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%A8%D8%B4%D9%85%D9%87%D9%86%D8%AF%D8%B3%20%D9%85%D8%A7%D9%87%D8%B1%D8%8C%20%D8%A8%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D8%A8%D8%B6%D8%A7%D8%B9%D8%A9%20%D8%A7%D9%84%D9%85%D8%AA%D9%88%D9%81%D8%B1%D8%A9" target="_blank" rel="noopener"
+                                   class="flex items-center justify-center gap-1 bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white text-xs font-bold py-2 px-2 rounded-lg transition">
+                                    <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                                    <span>واتساب</span>
+                                </a>
+                                <a href="tel:01097662434"
+                                   class="flex items-center justify-center gap-1 bg-slate-700 hover:bg-slate-600 active:scale-95 text-white text-xs font-bold py-2 px-2 rounded-lg transition">
+                                    <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+                                    <span>اتصال</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- شريط البحث وتصفية الأقسام (Sticky Navigation) -->
+    <div class="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-3 space-y-3">
+            <!-- مربع البحث الفوري -->
+            <div class="relative">
+                <div class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none">
+                    <i data-lucide="search" class="w-5 h-5 text-slate-400"></i>
+                </div>
+                <input type="text" id="searchInput" 
+                       placeholder="ابحث عن منتج، شاشة، لابتوب، ماوس، فلاشة أو كابل..." 
+                       class="w-full bg-slate-100 hover:bg-slate-200/70 focus:bg-white text-slate-900 placeholder-slate-500 text-sm sm:text-base rounded-xl pr-11 pl-10 py-3 border border-slate-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 outline-none transition">
+                <button id="clearSearchBtn" type="button" aria-label="مسح البحث"
+                        class="hidden absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400 hover:text-slate-700">
+                    <i data-lucide="x-circle" class="w-5 h-5"></i>
+                </button>
+            </div>
+
+            <!-- أزرار تصفية الأقسام -->
+            <div id="categoryTabs" class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
+                <button data-category="all" class="cat-btn active shrink-0 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition bg-slate-900 text-white shadow-sm">
+                    الكل (<span id="count-all">0</span>)
+                </button>
+                <button data-category="laptops-screens" class="cat-btn shrink-0 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition bg-slate-100 text-slate-700 hover:bg-slate-200">
+                    لابتوبات وشاشات وكاميرات
+                </button>
+                <button data-category="peripherals" class="cat-btn shrink-0 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition bg-slate-100 text-slate-700 hover:bg-slate-200">
+                    ماوسات وكيبورد وسماعات
+                </button>
+                <button data-category="flash-network" class="cat-btn shrink-0 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition bg-slate-100 text-slate-700 hover:bg-slate-200">
+                    فلاشات وإكسسوارات
+                </button>
+                <button data-category="cables" class="cat-btn shrink-0 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition bg-slate-100 text-slate-700 hover:bg-slate-200">
+                    كابلات وتحويلات
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- المحتوى الرئيسي وعرض المنتجات -->
+    <main class="flex-1 max-w-6xl w-full mx-auto px-4 py-6">
+        
+        <!-- شريط معلومات النتائج ومشاركة الرابط -->
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+            <div class="text-sm font-bold text-slate-600">
+                عرض <span id="visibleCount" class="text-sky-700 font-black">0</span> صنف متوفر
+            </div>
+            <button onclick="copyStoreLink()" class="inline-flex items-center gap-1.5 bg-white hover:bg-sky-50 text-sky-700 border border-sky-200 px-3.5 py-1.5 rounded-xl text-xs font-bold shadow-sm transition active:scale-95">
+                <i data-lucide="share-2" class="w-4 h-4"></i>
+                <span id="shareBtnText">مشاركة رابط المتجر</span>
+            </button>
+        </div>
+
+        <!-- شبكة بطاقات المنتجات -->
+        <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- يتم توليد البطاقات تلقائياً بواسطة JavaScript -->
+        </div>
+
+        <!-- رسالة في حالة عدم وجود نتائج مطابقة للبحث -->
+        <div id="emptyState" class="hidden bg-white rounded-2xl border border-slate-200 p-8 text-center my-6 shadow-sm">
+            <div class="w-16 h-16 bg-slate-100 text-slate-400 rounded-full flex items-center justify-center mx-auto mb-3">
+                <i data-lucide="search-x" class="w-8 h-8"></i>
+            </div>
+            <h3 class="text-lg font-extrabold text-slate-800 mb-1">لم نجد هذا الصنف في القائمة المختصرة</h3>
+            <p class="text-sm text-slate-500 mb-4">لكن لا تقلق! متوفر لدينا بضاعة تانية كتير جداً.. أي شيء تحتاجه متوفر بفضل الله.</p>
+            <a href="https://wa.me/201001735475?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%A8%D8%B4%D9%85%D9%87%D9%86%D8%AF%D8%B3%20%D9%85%D8%A7%D9%87%D8%B1%D8%8C%20%D9%83%D9%86%D8%AA%20%D8%A8%D8%B3%D8%A3%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B5%D9%86%D9%81%20%D9%85%D8%B9%D9%8A%D9%86" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm px-5 py-2.5 rounded-xl shadow transition">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>اسأل عن أي صنف على واتساب</span>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- الفوتر والبانر الختامي -->
+    <footer class="bg-slate-900 text-white mt-10 border-t border-slate-800">
+        <!-- البانر الترويجي المميز -->
+        <div class="bg-gradient-to-l from-amber-500 via-amber-400 to-yellow-500 text-slate-950 py-4 px-4 shadow-md">
+            <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center text-center gap-2 sm:gap-3">
+                <i data-lucide="sparkles" class="w-6 h-6 text-slate-900 shrink-0"></i>
+                <p class="text-base sm:text-lg font-black tracking-tight">
+                    متوفر بضاعة تانية كتير — أي شيء متوفر بفضل الله!
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-right">
+                <div>
+                    <h2 class="text-xl font-black text-white">م/ ماهر جمال مصباح</h2>
+                    <p class="text-slate-400 text-sm mt-1 flex items-center justify-center md:justify-start gap-1.5">
+                        <i data-lucide="map-pin" class="w-4 h-4 text-sky-400"></i>
+                        <span>زاوية غزال خلف الكوبرى القديم</span>
+                    </p>
+                </div>
+
+                <!-- روابط الواتساب والاتصال في الفوتر (01001735475 يمين و 01097662434 يسار) -->
+                <div class="flex flex-wrap items-center justify-center gap-3">
+                    <a href="https://wa.me/201001735475" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2.5 rounded-xl text-sm font-bold transition shadow">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        <span>واتساب: <span class="ltr-num">01001735475</span></span>
+                    </a>
+                    <a href="tel:01001735475"
+                       class="inline-flex items-center gap-2 bg-sky-600 hover:bg-sky-500 text-white px-4 py-2.5 rounded-xl text-sm font-bold transition shadow">
+                        <i data-lucide="phone" class="w-4 h-4"></i>
+                        <span class="ltr-num">01001735475</span>
+                    </a>
+                    <a href="https://wa.me/201097662434" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white px-4 py-2.5 rounded-xl text-sm font-bold transition">
+                        <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+                        <span>واتساب: <span class="ltr-num">01097662434</span></span>
+                    </a>
+                    <a href="tel:01097662434"
+                       class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white px-4 py-2.5 rounded-xl text-sm font-bold transition">
+                        <i data-lucide="phone" class="w-4 h-4 text-sky-400"></i>
+                        <span class="ltr-num">01097662434</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 mt-6 pt-4 text-center text-xs text-slate-500">
+                جميع الحقوق محفوظة &copy; م/ ماهر جمال مصباح — للكمبيوتر والشاشات والإكسسوارات
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر واتساب عائم لسهولة التواصل السريع من الموبايل -->
+    <a href="https://wa.me/201001735475?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%A8%D8%B4%D9%85%D9%87%D9%86%D8%AF%D8%B3%20%D9%85%D8%A7%D9%87%D8%B1%D8%8C%20%D9%83%D9%86%D8%AA%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A8%D8%B6%D8%A7%D8%B9%D8%A9" target="_blank" rel="noopener"
+       aria-label="تواصل واتساب"
+       class="fixed bottom-5 left-5 z-40 flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold px-4 py-3 rounded-full shadow-lg shadow-emerald-600/30 transition transform hover:scale-105 active:scale-95">
+        <i data-lucide="message-circle" class="w-6 h-6"></i>
+        <span class="text-sm hidden sm:inline">تواصل واتساب</span>
+    </a>
+
+    <!-- إشعار نسخ الرابط (بديل أنيق لـ alert) -->
+    <div id="toastMsg" class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 bg-slate-900 text-white text-sm font-bold px-5 py-3 rounded-xl shadow-xl border border-slate-700 opacity-0 pointer-events-none transition-opacity duration-300">
+        تم نسخ رابط المتجر! يمكنك لصقه ومشاركته على واتساب وفيسبوك.
+    </div>
+
+    <script>
+        // قاعدة بيانات المنتجات الكاملة مرتبة ومصنفة بدقة
+        const products = [
+            // 1. لابتوبات وشاشات وكاميرات
+            { name: "متوفر لابتوبات (تشكيلة مميزة)", category: "laptops-screens", categoryLabel: "لابتوبات وشاشات", priceType: "surprise", priceText: "مفاجأة", icon: "laptop", featured: true },
+            { name: "شاشة 24 بوصة HP / Dell", category: "laptops-screens", categoryLabel: "لابتوبات وشاشات", priceType: "surprise", priceText: "مفاجأة", icon: "monitor", featured: true },
+            { name: "شواحن لابتوبات", category: "laptops-screens", categoryLabel: "لابتوبات وشاشات", priceType: "dash", priceText: "—", icon: "battery-charging" },
+            { name: "متوفر جميع أجهزة وكابلات الكاميرات", category: "laptops-screens", categoryLabel: "كاميرات مراقبة", priceType: "dash", priceText: "—", icon: "cctv" },
+
+            // 2. فلاشات وأجهزة شبكة
+            { name: "فلاشة 16 جيجا", category: "flash-network", categoryLabel: "فلاشات وشبكة", priceType: "fixed", priceText: "250 جنيه", icon: "hard-drive" },
+            { name: "فلاشة 32 جيجا", category: "flash-network", categoryLabel: "فلاشات وشبكة", priceType: "fixed", priceText: "300 جنيه", icon: "hard-drive" },
+            { name: "فلاشة 64 جيجا", category: "flash-network", categoryLabel: "فلاشات وشبكة", priceType: "fixed", priceText: "350 جنيه", icon: "hard-drive" },
+            { name: "فلاشة نت (Wi-Fi)", category: "flash-network", categoryLabel: "فلاشات وشبكة", priceType: "fixed", priceText: "150 جنيه", icon: "wifi" },
+            { name: "فلاشة بلوتوث", category: "flash-network", categoryLabel: "فلاشات وشبكة", priceType: "fixed", priceText: "150 جنيه", icon: "bluetooth" },
+
+            // 3. ماوسات وكيبورد وسماعات ودراعات
+            { name: "ماوس Zero", category: "peripherals", categoryLabel: "ماوس وكيبورد", priceType: "fixed", priceText: "50 جنيه", icon: "mouse" },
+            { name: "ماوس متوسط", category: "peripherals", categoryLabel: "ماوس وكيبورد", priceType: "fixed", priceText: "70 جنيه", icon: "mouse" },
+            { name: "ماوس عالي", category: "peripherals", categoryLabel: "ماوس وكيبورد", priceType: "fixed", priceText: "80 جنيه", icon: "mouse" },
+            { name: "ماوس جيمينج", category: "peripherals", categoryLabel: "ماوس وكيبورد", priceType: "fixed", priceText: "400 جنيه", icon: "gamepad-2" },
+            { name: "ماوس HP W10 بلوتوث", category: "peripherals", categoryLabel: "ماوس وكيبورد", priceType: "fixed", priceText: "140 جنيه", icon: "mouse" },
+            { name: "ماوس باد", category: "peripherals", categoryLabel: "ماوس وكيبورد", priceType: "fixed", priceText: "25 جنيه", icon: "square" },
+            { name: "كيبورد Zero", category: "peripherals", categoryLabel: "ماوس وكيبورد", priceType: "fixed", priceText: "150 جنيه", icon: "keyboard" },
+            { name: "سماعة V400 Kisonli", category: "peripherals", categoryLabel: "سماعات", priceType: "fixed", priceText: "150 جنيه", icon: "speaker" },
+            { name: "سماعة عمود K2065", category: "peripherals", categoryLabel: "سماعات", priceType: "fixed", priceText: "270 جنيه", icon: "volume-2" },
+            { name: "دراعات ألعاب هزاز", category: "peripherals", categoryLabel: "ألعاب", priceType: "fixed", priceText: "250 جنيه", icon: "gamepad" },
+            { name: "دراعات ألعاب عادية", category: "peripherals", categoryLabel: "ألعاب", priceType: "fixed", priceText: "180 جنيه", icon: "gamepad" },
+
+            // 4. كابلات وتحويلات وباور
+            { name: "كابل باور لاب ثلاثي", category: "cables", categoryLabel: "كابلات وباور", priceType: "fixed", priceText: "50 جنيه", icon: "plug" },
+            { name: "كابل باور لاب ثنائي", category: "cables", categoryLabel: "كابلات وباور", priceType: "fixed", priceText: "50 جنيه", icon: "plug" },
+            { name: "كابل باور كيسة", category: "cables", categoryLabel: "كابلات وباور", priceType: "fixed", priceText: "50 جنيه", icon: "plug" },
+            { name: "كابل شاشة", category: "cables", categoryLabel: "كابلات وباور", priceType: "fixed", priceText: "50 جنيه", icon: "cable" },
+            { name: "أدابتور 12V 2A", category: "cables", categoryLabel: "كابلات وباور", priceType: "fixed", priceText: "120 جنيه", icon: "zap" },
+            { name: "كابل HD × فيجا (HDMI to VGA)", category: "cables", categoryLabel: "كابلات وتحويلات", priceType: "fixed", priceText: "80 جنيه", icon: "cable" },
+            { name: "كابل 1×1", category: "cables", categoryLabel: "كابلات", priceType: "fixed", priceText: "25 جنيه", icon: "cable" },
+            { name: "كابل 2×1", category: "cables", categoryLabel: "كابلات", priceType: "fixed", priceText: "25 جنيه", icon: "cable" },
+            { name: "كابل 3×1", category: "cables", categoryLabel: "كابلات", priceType: "fixed", priceText: "25 جنيه", icon: "cable" },
+            { name: "كابل 3×3", category: "cables", categoryLabel: "كابلات", priceType: "fixed", priceText: "25 جنيه", icon: "cable" },
+            { name: "كابل HD × HD (HDMI to HDMI)", category: "cables", categoryLabel: "كابلات وتحويلات", priceType: "dash", priceText: "—", icon: "cable" },
+            { name: "كابل Display × Display (DisplayPort)", category: "cables", categoryLabel: "كابلات وتحويلات", priceType: "dash", priceText: "—", icon: "cable" },
+            { name: "كابل طابعة 1.5 متر", category: "cables", categoryLabel: "كابلات", priceType: "dash", priceText: "—", icon: "printer" },
+            { name: "كابل طابعة 3 متر", category: "cables", categoryLabel: "كابلات", priceType: "dash", priceText: "—", icon: "printer" },
+            { name: "كابل DVI × فيجا", category: "cables", categoryLabel: "كابلات وتحويلات", priceType: "dash", priceText: "—", icon: "cable" },
+            { name: "تحويلة DVI × فيجا", category: "cables", categoryLabel: "تحويلات", priceType: "dash", priceText: "—", icon: "arrow-left-right" },
+            { name: "تطويلة USB", category: "cables", categoryLabel: "كابلات وتطويلات", priceType: "dash", priceText: "—", icon: "usb" }
+        ];
+
+        let currentCategory = 'all';
+        let currentSearch = '';
+
+        const productsGrid = document.getElementById('productsGrid');
+        const emptyState = document.getElementById('emptyState');
+        const visibleCount = document.getElementById('visibleCount');
+        const countAll = document.getElementById('count-all');
+        const searchInput = document.getElementById('searchInput');
+        const clearSearchBtn = document.getElementById('clearSearchBtn');
+        const categoryBtns = document.querySelectorAll('.cat-btn');
+
+        // تحديث إجمالي عدد الأصناف
+        countAll.textContent = products.length;
+
+        // دالة بناء بطاقة المنتج الواحد
+        function createProductCard(item) {
+            const whatsappText = encodeURIComponent(`السلام عليكم بشمهندس ماهر، حابب أستفسر / أطلب: ${item.name}`);
+            const whatsappUrl = `https://wa.me/201001735475?text=${whatsappText}`;
+
+            // تحديد شكل شارة السعر
+            let priceBadgeHtml = '';
+            if (item.priceType === 'surprise') {
+                priceBadgeHtml = `
+                    <span class="surprise-badge inline-flex items-center gap-1 bg-amber-100 text-amber-800 border border-amber-400 px-3 py-1 rounded-lg text-sm font-black">
+                        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-600"></i>
+                        <span>${item.priceText}</span>
+                    </span>`;
+            } else if (item.priceType === 'dash') {
+                priceBadgeHtml = `
+                    <span class="inline-flex items-center gap-1 bg-slate-100 text-slate-600 border border-slate-300 px-3 py-1 rounded-lg text-sm font-bold" title="تواصل لمعرفة السعر">
+                        <span>${item.priceText}</span>
+                        <span class="text-[11px] text-slate-400 font-normal">(تواصل للسعر)</span>
+                    </span>`;
+            } else {
+                priceBadgeHtml = `
+                    <span class="inline-flex items-center bg-sky-50 text-sky-900 border border-sky-200 px-3 py-1 rounded-lg text-base font-black">
+                        ${item.priceText}
+                    </span>`;
+            }
+
+            const cardBorder = item.featured 
+                ? 'border-amber-300 ring-1 ring-amber-200/60 bg-gradient-to-b from-amber-50/30 to-white' 
+                : 'border-slate-200 bg-white hover:border-sky-300';
+
+            return `
+                <div class="rounded-2xl border ${cardBorder} p-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-4">
+                    <div class="flex items-start justify-between gap-3">
+                        <div class="flex items-start gap-3">
+                            <div class="w-11 h-11 rounded-xl ${item.featured ? 'bg-amber-100 text-amber-700' : 'bg-slate-100 text-slate-700'} flex items-center justify-center shrink-0 mt-0.5">
+                                <i data-lucide="${item.icon}" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] font-bold text-slate-400 block mb-0.5">${item.categoryLabel}</span>
+                                <h3 class="text-base font-extrabold text-slate-900 leading-snug">${item.name}</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+                        <div>
+                            ${priceBadgeHtml}
+                        </div>
+                        <a href="${whatsappUrl}" target="_blank" rel="noopener"
+                           class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white text-xs font-bold px-3.5 py-2.5 rounded-xl shadow-sm transition shrink-0">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i>
+                            <span>اطلب واتساب</span>
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+
+        // دالة تصفية وعرض المنتجات
+        function renderProducts() {
+            const query = currentSearch.trim().toLowerCase();
+
+            const filtered = products.filter(item => {
+                const matchesCat = currentCategory === 'all' || item.category === currentCategory;
+                const matchesSearch = !query || 
+                    item.name.toLowerCase().includes(query) || 
+                    item.categoryLabel.toLowerCase().includes(query) ||
+                    item.priceText.toLowerCase().includes(query);
+                return matchesCat && matchesSearch;
+            });
+
+            visibleCount.textContent = filtered.length;
+
+            if (filtered.length === 0) {
+                productsGrid.innerHTML = '';
+                emptyState.classList.remove('hidden');
+            } else {
+                emptyState.classList.add('hidden');
+                productsGrid.innerHTML = filtered.map(createProductCard).join('');
+            }
+
+            // إعادة تفعيل الأيقونات بعد الرسم
+            lucide.createIcons();
+        }
+
+        // مستمع البحث الفوري
+        searchInput.addEventListener('input', (e) => {
+            currentSearch = e.target.value;
+            clearSearchBtn.classList.toggle('hidden', currentSearch.length === 0);
+            renderProducts();
+        });
+
+        // زر مسح البحث
+        clearSearchBtn.addEventListener('click', () => {
+            searchInput.value = '';
+            currentSearch = '';
+            clearSearchBtn.classList.add('hidden');
+            searchInput.focus();
+            renderProducts();
+        });
+
+        // مستمع أزرار الأقسام
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                categoryBtns.forEach(b => {
+                    b.classList.remove('bg-slate-900', 'text-white', 'shadow-sm');
+                    b.classList.add('bg-slate-100', 'text-slate-700', 'hover:bg-slate-200');
+                });
+                btn.classList.remove('bg-slate-100', 'text-slate-700', 'hover:bg-slate-200');
+                btn.classList.add('bg-slate-900', 'text-white', 'shadow-sm');
+
+                currentCategory = btn.dataset.category;
+                renderProducts();
+            });
+        });
+
+        // دالة نسخ رابط الصفحة للمشاركة
+        function copyStoreLink() {
+            try {
+                const dummy = document.createElement('input');
+                document.body.appendChild(dummy);
+                dummy.value = window.location.href;
+                dummy.select();
+                document.execCommand('copy');
+                document.body.removeChild(dummy);
+
+                const toast = document.getElementById('toastMsg');
+                toast.classList.remove('opacity-0');
+                setTimeout(() => {
+                    toast.classList.add('opacity-0');
+                }, 3000);
+            } catch (err) {
+                console.error('تعذر نسخ الرابط:', err);
+            }
+        }
+
+        // التشغيل الأولي عند تحميل الصفحة
+        window.addEventListener('DOMContentLoaded', () => {
+            renderProducts();
+        });
+    </script>
+</body>
+</html>
